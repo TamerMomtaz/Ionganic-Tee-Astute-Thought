@@ -4,46 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ionganic.Tee.Astute.Thought — Portal</title>
+
   <style>
-    <style>
-  /* … keep your existing :root colors … */
-
-  header{
-    text-align:center;
-    padding:40px 20px 10px;
-  }
-  header .logo-wrap{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:200px;height:200px;
-    border-radius:999px;
-    background:#fff;              /* white badge so dark logos show */
-    border:2px solid var(--accent);
-    margin-bottom:14px;
-    box-shadow:0 6px 22px rgba(0,0,0,.35);
-  }
-  header img{
-    max-width:180px; max-height:180px;
-    object-fit:contain;
-    display:block;
-  }
-  h1{ margin:0; font-size:34px; letter-spacing:.5px; color:var(--accent); }
-  p.lead{ margin:8px 0 32px; color:var(--muted); text-align:center; font-size:15px; }
-
-  /* (keep the rest of your styles unchanged) */
-</style>
-
-        :root{
-  --bg:#f7f7fb;      /* page background */
-  --card:#ffffff;    /* card background */
-  --text:#1b1f24;    /* main text */
-  --accent:#2457ff;  /* blue accent */
-  --muted:#6b7280;   /* muted text */
-  --border:#e5e7eb;  /* subtle borders */
-}
-
+    /* Theme (Astute Light) */
+    :root{
+      --bg:#f7f7fb;      /* page background */
+      --card:#ffffff;    /* card background */
+      --text:#1b1f24;    /* main text */
+      --accent:#2457ff;  /* blue accent */
+      --muted:#6b7280;   /* muted text */
+      --border:#e5e7eb;  /* subtle borders */
     }
+
     *{box-sizing:border-box}
     body{
       margin:0;
@@ -51,92 +23,54 @@
       background:var(--bg);
       color:var(--text);
     }
-    header{
-      text-align:center;
-      padding:40px 20px 10px;
-    }
-    header img{
-      width:90px;
-      height:auto;
-      border-radius:50%;
-      border:2px solid var(--accent);
-      margin-bottom:15px;
-    }
-    h1{
-      margin:0;
-      font-size:34px;
-      letter-spacing:0.5px;
-      color:var(--accent);
-    }
-    p.lead{
-      margin:8px 0 32px;
-      color:var(--muted);
-      text-align:center;
-      font-size:15px;
-    }
-    .wrap{
-      max-width:1000px;
-      margin:0 auto;
-      padding:0 16px;
-    }
-    .grid{
-      display:grid;
-      gap:20px;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    }
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:14px;
-      padding:22px;
-      transition:transform 0.2s ease, border 0.2s ease;
-    }
-    .card:hover{
-      transform:translateY(-5px);
-      border:1px solid var(--accent);
-    }
-    .card h3{margin:0 0 8px;font-size:18px;color:var(--accent);}
-    .card p{margin:0 0 14px;color:var(--muted);font-size:14px;line-height:1.4}
-    .btn{
-      display:inline-block;
-      padding:10px 16px;
-      border-radius:10px;
-      border:1px solid var(--accent);
-      text-decoration:none;
-      color:var(--text);
-      font-weight:500;
-    }
-    .btn:hover{
-      background:var(--accent);
-      color:#fff;
-    }
-    footer{
-      margin:50px 0 20px;
-      color:var(--muted);
-      font-size:13px;
-      text-align:center;
-    }
-  </style>
 
+    /* Header + Logo */
+    header{ text-align:center; padding:40px 20px 10px; }
+    .logo-wrap{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:200px; height:200px; border-radius:999px;
+      background:#fff; border:2px solid var(--accent);
+      margin-bottom:14px; box-shadow:0 6px 22px rgba(0,0,0,.12);
+    }
+    header img{ max-width:180px; max-height:180px; object-fit:contain; display:block; }
+
+    h1{ margin:0; font-size:34px; letter-spacing:.5px; color:var(--accent); }
+    p.lead{ margin:8px 0 32px; color:var(--muted); text-align:center; font-size:15px; }
+
+    .wrap{ max-width:1000px; margin:0 auto; padding:0 16px; }
+
+    /* Cards grid */
+    .grid{ display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:14px; padding:22px;
+      transition:transform .2s ease, border .2s ease;
+    }
+    .card:hover{ transform:translateY(-5px); border:1px solid var(--accent); }
+    .card h3{ margin:0 0 8px; font-size:18px; color:var(--accent); }
+    .card p{ margin:0 0 14px; color:var(--muted); font-size:14px; line-height:1.4; }
+    .btn{
+      display:inline-block; padding:10px 16px; border-radius:10px; border:1px solid var(--accent);
+      text-decoration:none; color:var(--text); font-weight:500;
+    }
+    .btn:hover{ background:var(--accent); color:#fff; }
+
+    footer{ margin:50px 0 20px; color:var(--muted); font-size:13px; text-align:center; }
+  </style>
 </head>
 <body>
-    <header>
-  <header>
-  <div class="logo-wrap">
-    <img src="./logo.png" alt="Ionganic Tee Astute Thought Logo">
-  </div>
-  <h1>Ionganic.Tee.Astute.Thought</h1>
-  <p class="lead">A portal of projects, thoughts, and RootRise experiments.</p>
-</header>
 
+  <header>
+    <div class="logo-wrap">
+      <img src="logo.png" alt="Ionganic Tee Astute Thought Logo">
+    </div>
+    <h1>Ionganic.Tee.Astute.Thought</h1>
+    <p class="lead">A portal of projects, thoughts, and RootRise experiments.</p>
   </header>
 
   <div class="wrap">
-    
     <p class="lead">A single doorway to all RootRise development works. Click a card to open in a new tab.</p>
 
     <div class="grid">
-
       <!-- CARD 1 -->
       <div class="card">
         <h3>Before & After (RootRise)</h3>
@@ -149,26 +83,22 @@
         <h3>RootRise — Initial Problem Discovery</h3>
         <p>Jump to the anchor on the main RootRise page.</p>
         <a class="btn" target="_blank" href="https://tamermomtaz.github.io/Rise-of-RootRise/#initial-problem-discovery">Open</a>
-        <div class="card">
-  <h3>YOUR NEW PAGE TITLE</h3>
-  <p>1–2 line description of what’s inside.</p>
-  <a class="btn" target="_blank"
-     href="https://tamermomtaz.github.io/Alaa-Thinks/">
-    Open
-  </a>
-</div>
-
       </div>
 
-      <!-- TEMPLATE: duplicate this block for every new page you add -->
-      <!--
+      <!-- CARD 3 -->
+      <div class="card">
+        <h3>Alaa Thinks</h3>
+        <p>Personal notes and reflections.</p>
+        <a class="btn" target="_blank" href="https://tamermomtaz.github.io/Alaa-Thinks/">Open</a>
+      </div>
+
+      <!-- TEMPLATE (copy for new pages)
       <div class="card">
         <h3>Your New Page Title</h3>
-        <p>1–2 line description.</p>
-        <a class="btn" target="_blank" href="PASTE_YOUR_GITHUB_PAGES_LINK_HERE">Open</a>
+        <p>1–2 line description of what’s inside.</p>
+        <a class="btn" target="_blank" href="https://tamermomtaz.github.io/REPO-NAME/">Open</a>
       </div>
       -->
-
     </div>
 
     <footer>© 2025 Tamer Momtaz — Update cards in <code>index.html</code> anytime.</footer>
