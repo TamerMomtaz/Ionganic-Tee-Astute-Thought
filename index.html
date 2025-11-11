@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ionganic.Tee.Astute.Thought — Portal</title>
-
   <style>
     /* Theme (Astute Light) */
     :root{
@@ -15,10 +14,9 @@
       --muted:#6b7280;   /* muted text */
       --border:#e5e7eb;  /* subtle borders */
     }
-
     *{box-sizing:border-box}
 
-    /* Background uses the logo image, softened by a white overlay */
+    /* Soft full-page logo background + white overlay for readability */
     body{
       margin:0;
       font-family:"Segoe UI",Roboto,Arial,sans-serif;
@@ -28,26 +26,27 @@
       background-size: cover;
       background-attachment: fixed;
       color:var(--text);
+      min-height:100vh;
     }
 
-    /* Header (no logo here; just title + subtitle) */
+    /* Page container (gives structure so nothing disappears) */
+    .page{ max-width:1000px; margin:0 auto; padding:24px 16px 40px; }
+
+    /* Header (glass card) */
     header{
       text-align:center;
-      padding:40px 20px 16px;
-      background: rgba(255,255,255,0.6);
+      padding:28px 28px 16px;
+      background: rgba(255,255,255,0.7);
       backdrop-filter: blur(10px);
-      border-radius: 20px;
-      display: inline-block;
-      margin: 30px auto 20px;
+      border:1px solid var(--border);
+      border-radius:20px;
+      margin:30px 0 16px;
     }
-
     h1{ margin:0; font-size:34px; letter-spacing:.5px; color:var(--accent); }
-    p.lead{ margin:8px 0 0; color:var(--muted); text-align:center; font-size:15px; }
-
-    .wrap{ max-width:1000px; margin:0 auto; padding:0 16px; }
+    p.lead{ margin:8px 0 0; color:var(--muted); font-size:15px; }
 
     /* Cards grid */
-    .grid{ display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+    .grid{ display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:20px; }
     .card{
       background:var(--card); border:1px solid var(--border); border-radius:14px; padding:22px;
       transition:transform .2s ease, border .2s ease;
@@ -57,4 +56,56 @@
     .card p{ margin:0 0 14px; color:var(--muted); font-size:14px; line-height:1.4; }
     .btn{
       display:inline-block; padding:10px 16px; border-radius:10px; border:1px solid var(--accent);
-      text-dec
+      text-decoration:none; color:var(--text); font-weight:500;
+    }
+    .btn:hover{ background:var(--accent); color:#fff; }
+
+    footer{ margin:40px 0 10px; color:var(--muted); font-size:13px; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Ionganic.Tee.Astute.Thought</h1>
+      <p class="lead">A portal of projects, thoughts, and RootRise experiments.</p>
+    </header>
+
+    <p class="lead" style="text-align:center;margin-top:8px;">
+      A single doorway to all RootRise development works. Click a card to open in a new tab.
+    </p>
+
+    <div class="grid">
+      <!-- CARD 1 -->
+      <div class="card">
+        <h3>Before & After (RootRise)</h3>
+        <p>Comparative snapshots of changes over time.</p>
+        <a class="btn" target="_blank" href="https://tamermomtaz.github.io/Rise-of-RootRise-before-after/">Open</a>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <h3>RootRise — Initial Problem Discovery</h3>
+        <p>Jump to the anchor on the main RootRise page.</p>
+        <a class="btn" target="_blank" href="https://tamermomtaz.github.io/Rise-of-RootRise/#initial-problem-discovery">Open</a>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <h3>Alaa Thinks</h3>
+        <p>Personal notes and reflections.</p>
+        <a class="btn" target="_blank" href="https://tamermomtaz.github.io/Alaa-Thinks/">Open</a>
+      </div>
+
+      <!-- TEMPLATE: copy for each new page
+      <div class="card">
+        <h3>Your New Page Title</h3>
+        <p>1–2 line description of what’s inside.</p>
+        <a class="btn" target="_blank" href="https://tamermomtaz.github.io/REPO-NAME/">Open</a>
+      </div>
+      -->
+    </div>
+
+    <footer>© 2025 Tamer Momtaz — Update cards in <code>index.html</code> anytime.</footer>
+  </div>
+</body>
+</html>
