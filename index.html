@@ -61,6 +61,20 @@
     .btn:hover{ background:var(--accent); color:#fff; }
 
     footer{ margin:40px 0 10px; color:var(--muted); font-size:13px; text-align:center; }
+    .logo-link img {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  border: 1px solid var(--accent);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;
+  margin: 10px auto 0;
+}
+.logo-link img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(36, 87, 255, 0.3);
+}
+
   </style>
 </head>
 <body>
@@ -75,26 +89,33 @@
     </p>
 
     <div class="grid">
-      <!-- CARD 1 -->
-      <div class="card">
-        <h3>Before & After (RootRise)</h3>
-        <p>Comparative snapshots of changes over time.</p>
-        <a class="btn" target="_blank" href="https://tamermomtaz.github.io/Rise-of-RootRise-before-after/">Open</a>
-      </div>
+  <!-- CARD 1 -->
+  <div class="card">
+    <h3>Before & After (RootRise)</h3>
+    <p>Comparative snapshots of changes over time.</p>
+    <a class="logo-link" target="_blank" href="https://tamermomtaz.github.io/Rise-of-RootRise-before-after/">
+      <img src="logo.png" alt="Open Before & After (RootRise)">
+    </a>
+  </div>
 
-      <!-- CARD 2 -->
-      <div class="card">
-        <h3>RootRise — Initial Problem Discovery</h3>
-        <p>Jump to the anchor on the main RootRise page.</p>
-        <a class="btn" target="_blank" href="https://tamermomtaz.github.io/Rise-of-RootRise/#initial-problem-discovery">Open</a>
-      </div>
+  <!-- CARD 2 -->
+  <div class="card">
+    <h3>RootRise — Initial Problem Discovery</h3>
+    <p>Jump to the anchor on the main RootRise page.</p>
+    <a class="logo-link" target="_blank" href="https://tamermomtaz.github.io/Rise-of-RootRise/#initial-problem-discovery">
+      <img src="logo.png" alt="Open RootRise — Initial Problem Discovery">
+    </a>
+  </div>
 
-      <!-- CARD 3 -->
-      <div class="card">
-        <h3>Alaa Thinks</h3>
-        <p>Personal notes and reflections.</p>
-        <a class="btn" target="_blank" href="https://tamermomtaz.github.io/Alaa-Thinks/">Open</a>
-      </div>
+  <!-- CARD 3 -->
+  <div class="card">
+    <h3>Alaa Thinks</h3>
+    <p>Personal notes and reflections.</p>
+    <a class="logo-link" target="_blank" href="https://tamermomtaz.github.io/Alaa-Thinks/">
+      <img src="logo.png" alt="Open Alaa Thinks">
+    </a>
+  </div>
+</div>
 
       <!-- TEMPLATE: copy for each new page
       <div class="card">
